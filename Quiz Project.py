@@ -51,7 +51,6 @@ for key, value in quiz.items():
         skor = skor + 1
         print("Skor kamu sekarang adalah " + str(skor))
         print("")
-        print("---------------------------------")
         print("")
     
     else:
