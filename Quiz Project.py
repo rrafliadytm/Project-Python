@@ -45,11 +45,13 @@ for key, value in quiz.items():
     print(value["pilihan"])
     jawaban = input("jawaban?....")
 
+
     if jawaban.lower() == value["jawaban"].lower():
         print("Kamu Benar! :)")
         skor = skor + 1
         print("Skor kamu sekarang adalah " + str(skor))
         print("")
+        print("---------------------------------")
         print("")
     
     else:
@@ -57,7 +59,10 @@ for key, value in quiz.items():
         print("Jawaban yang tepat adalah " + value["jawaban"] + " alasannya karena " + value["penjelasan"])
         print("Skor kamu sekarang adalah " + str(skor))
         print("")
+        print("---------------------------------")
         print("")
+        
+
 
 
 print("Total perolehan skor kamu adalah " + str(skor) + " dari keseluruhan 5 soal")
