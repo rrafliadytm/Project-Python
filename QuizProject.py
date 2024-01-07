@@ -1,4 +1,4 @@
-#List pertanyaan quiz
+#LIST PERTANYAAN UNTUK QUIZ BERUPA DICTIONARY
 
 quiz = {
     "pertanyaan ke 1": {
@@ -32,13 +32,15 @@ quiz = {
 skor = 0
 
 
-#Code
+#CODE UNTUK PEMBUKAAN AWAL QUIZ
 
 print("Selamat Datang di Quiz Indonesia!")
 print("")
 print("Silahkan pilih salah satu jawaban yang tepat dengan input yang lengkap!")
 print("")
 
+
+#CODE UNTUK PEMROSESAN PERTANYAAN DAN JAWABAN QUIZ
 
 for key, value in quiz.items():
     print(value["pertanyaan:"])
@@ -59,6 +61,7 @@ for key, value in quiz.items():
         print("")
         print("")
 
+#CODE UNTUK MENGHITUNG PEROLEHAN  SKOR AKHIR DARI QUIZ
 
 print("Total perolehan skor kamu adalah " + str(skor) + " dari keseluruhan 5 soal")
 print("Presentase skormu adalah " + (str(int(skor/5 * 100))) + "%")
