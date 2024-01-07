@@ -22,10 +22,10 @@ quiz = {
         "jawaban": "C.38",
         "penjelasan": "adanya pemekaran yang terjadi di Papua dengan menambahkan empat provinsi baru yaitu Provinsi Papua Selatan, Provinsi Papua Tengah, Provinsi Papua Pegunungan, dan Provinsi Papua Barat Daya"
     },"pertanyaan ke 5": {
-        "pertanyaan:": "Siapa pelatih Tim Nasional Indonesia saat ini?",
-        "pilihan": "A.Indra Sjafri B.Alfred Riedl C.Djajang Nurdjaman D.Shin Tae-Yong",
-        "jawaban": "D.Shin Tae-Yong",
-        "penjelasan": "Shin Tae-Yong memiliki pengalaman dan prestasi di dunia sepakbola, baik sebagai pemain maupun pelatih"
+        "pertanyaan:": "Indonesia terletak diantara dua Benua, yaitu Benua Asia dan Benua? ",
+        "pilihan": "A.Eropa B.Amerika C.Antartika D.Australia",
+        "jawaban": "D.Australia",
+        "penjelasan": "Secara geografis, Indonesia terletak diantara dua Benua, yaitu Benua Asia dan Benua Australia"
     }
 }
 
@@ -51,7 +51,7 @@ for key, value in quiz.items():
         print("Skor kamu sekarang adalah " + str(skor))
         print("")
         print("")
-    
+
     else:
         print("Kamu salah, Nice Try! :(")
         print("Jawaban yang tepat adalah " + value["jawaban"] + " alasannya karena " + value["penjelasan"])
