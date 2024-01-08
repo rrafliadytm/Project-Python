@@ -32,7 +32,7 @@ quiz = {
 skor = 0
 
 
-#Code
+#PEMBUKAAN QUIZ
 
 print("Selamat Datang di Quiz Indonesia!")
 print("")
@@ -43,7 +43,7 @@ print("")
 for key, value in quiz.items():
     print(value["pertanyaan:"])
     print(value["pilihan"])
-    jawaban = input("jawaban?....") #FUNGSI UNTUK MEMINTA PENGGUNA MENG-INPUT JAWABAN
+    jawaban = input("jawaban?....") #<--FUNGSI UNTUK MEMINTA PENGGUNA MENG-INPUT JAWABAN
 
 #FUNGSI UNTUK MENGHITUNG APABILA JAWABAN BENAR
 
