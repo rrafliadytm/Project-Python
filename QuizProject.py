@@ -32,27 +32,31 @@ quiz = {
 skor = 0
 
 
-#Code
+#PEMBUKA QUIZ
 
 print("Selamat Datang di Quiz Indonesia!")
 print("")
 print("Silahkan pilih salah satu jawaban yang tepat dengan input yang lengkap!")
 print("")
 
+#FUNGSI UNTUK MEMANGGIL PERTANYAAN DAN PILIHAN QUIZ
 
 for key, value in quiz.items():
     print(value["pertanyaan:"])
     print(value["pilihan"])
-    jawaban = input("jawaban?....")
+    jawaban = input("jawaban?....") #FUNGSI UNTUK MEMINTA PENGGUNA MENG-INPUT JAWABAN
 
+#FUNGSI UNTUK MENGHITUNG APABILA JAWABAN BENAR
 
-    if jawaban.lower() == value["jawaban"].lower():
+    if jawaban.lower() == value["jawaban"].lower(): 
         print("Kamu Benar! :)")
         skor = skor + 1
         print("Skor kamu sekarang adalah " + str(skor))
         print("")
         print("")
     
+#FUNGSI UNTUK MENGHITUNG APABILA JAWABAN SALAH
+
     else:
         print("Kamu salah, Nice Try! :(")
         print("Jawaban yang tepat adalah " + value["jawaban"] + " alasannya karena " + value["penjelasan"])
@@ -62,7 +66,7 @@ for key, value in quiz.items():
         print("")
         
 
-
+#FUNGSI UNTUK MENGHITUNG TOTAL PEROLEHAN SKOR AKHIR QUIZ
 
 print("Total perolehan skor kamu adalah " + str(skor) + " dari keseluruhan 5 soal")
 print("Presentase skormu adalah " + (str(int(skor/5 * 100))) + "%")
