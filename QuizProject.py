@@ -1,4 +1,4 @@
-#List pertanyaan quiz
+#LIST PERTANYAAN UNTUK QUIZ BERUPA DICTIONARY
 
 quiz = {
     "pertanyaan ke 1": {
@@ -22,24 +22,23 @@ quiz = {
         "jawaban": "C.38",
         "penjelasan": "adanya pemekaran yang terjadi di Papua dengan menambahkan empat provinsi baru yaitu Provinsi Papua Selatan, Provinsi Papua Tengah, Provinsi Papua Pegunungan, dan Provinsi Papua Barat Daya"
     },"pertanyaan ke 5": {
-        "pertanyaan:": "Siapa pelatih Tim Nasional Indonesia saat ini?",
-        "pilihan": "A.Indra Sjafri B.Alfred Riedl C.Djajang Nurdjaman D.Shin Tae-Yong",
-        "jawaban": "D.Shin Tae-Yong",
-        "penjelasan": "Shin Tae-Yong memiliki pengalaman dan prestasi di dunia sepakbola, baik sebagai pemain maupun pelatih"
+        "pertanyaan:": "Indonesia terletak diantara dua Benua, yaitu Benua Asia dan Benua? ",
+        "pilihan": "A.Eropa B.Amerika C.Antartika D.Australia",
+        "jawaban": "D.Australia",
+        "penjelasan": "Secara geografis, Indonesia terletak diantara dua Benua, yaitu Benua Asia dan Benua Australia"
     }
 }
 
 skor = 0
 
 
-#PEMBUKA QUIZ
+#Code
 
 print("Selamat Datang di Quiz Indonesia!")
 print("")
 print("Silahkan pilih salah satu jawaban yang tepat dengan input yang lengkap!")
 print("")
 
-#FUNGSI UNTUK MEMANGGIL PERTANYAAN DAN PILIHAN QUIZ
 
 for key, value in quiz.items():
     print(value["pertanyaan:"])
@@ -55,8 +54,6 @@ for key, value in quiz.items():
         print("")
         print("")
     
-#FUNGSI UNTUK MENGHITUNG APABILA JAWABAN SALAH
-
     else:
         print("Kamu salah, Nice Try! :(")
         print("Jawaban yang tepat adalah " + value["jawaban"] + " alasannya karena " + value["penjelasan"])
@@ -64,7 +61,7 @@ for key, value in quiz.items():
         print("")
         print("---------------------------------")
         print("")
-        
+
 
 #FUNGSI UNTUK MENGHITUNG TOTAL PEROLEHAN SKOR AKHIR QUIZ
 
