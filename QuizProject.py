@@ -1,4 +1,4 @@
-#LIST PERTANYAAN UNTUK QUIZ BERUPA DICTIONARY
+#LIST PERTANYAAN UNTUK QUIZ BERUPA TIPE DATA DICTIONARY
 
 quiz = {
     "pertanyaan ke 1": {
@@ -13,8 +13,8 @@ quiz = {
         "penjelasan": "pemilihan Ibukota DKI Jakarta memiliki sejarah dan pertimbangan tertentu, seperti pertimbangan geografis, pertimbangan politis dan ekonomis, warisan kolonial, dan infrastruktur dan fasilitas"
     },"pertanyaan ke 3": {
         "pertanyaan:": "Siapa Presiden pertama Republik Indonesia",
-        "pilihan": "A.Ir Soekarno B.Soeharto C.Jokowi D.BJ Habibie",
-        "jawaban": "A.Ir Soekarno",
+        "pilihan": "A.Ir.Soekarno B.Soeharto C.Jokowi D.BJ Habibie",
+        "jawaban": "A.Ir.Soekarno",
         "penjelasan": "Ir.Soekarno memiliki peran penting dalam masa perjuangan kemerdekaan Indonesia sekaligus menjadi bapak proklamator"
     },"pertanyaan ke 4": {
         "pertanyaan:": "Saat ini berapa jumlah provinsi di Indonesia?",
@@ -39,6 +39,7 @@ print("")
 print("Silahkan pilih salah satu jawaban yang tepat dengan input yang lengkap!")
 print("")
 
+#FUNGSI UNTUK MENAMPILKAN PERTANYAAN DAN PILIHAN JAWABAN
 
 for key, value in quiz.items():
     print(value["pertanyaan:"])
@@ -54,6 +55,8 @@ for key, value in quiz.items():
         print("")
         print("")
     
+#FUNGSI UNTUK MENGHITUNG APABILA JAWABAN SALAH
+
     else:
         print("Kamu salah, Nice Try! :(")
         print("Jawaban yang tepat adalah " + value["jawaban"] + " alasannya karena " + value["penjelasan"])
